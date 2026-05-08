@@ -1,6 +1,6 @@
 function BtnPrimary({ type, text }) {
   return (
-    <button type={type}>{text}</button>
+    <button className="btn-primary" type={type}>{text}</button>
   )
 }
 

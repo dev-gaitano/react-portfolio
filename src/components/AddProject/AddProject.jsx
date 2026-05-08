@@ -1,4 +1,5 @@
 import BtnPrimary from "../ui/BtnPrimary"
+import InputPrimary from "../ui/InputPrimary"
 import "./AddProject.css"
 
 function Addproject() {
@@ -6,8 +7,8 @@ function Addproject() {
     <div className="wrapper-add-project">
       <h2>Add project</h2>
       <div className="input-area">
-        <input type="text" name="title" value="" />
-        <textarea rows="" cols=""></textarea>
+        <InputPrimary type={"text"} name={"title"} />
+        <textarea rows="5" cols=""></textarea>
       </div>
       <BtnPrimary type={"submit"} text={"Add"} />
     </div>

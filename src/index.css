@@ -3,3 +3,30 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+main {
+  padding: 0 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.input-primary {
+  min-height: 40px;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.input-secondary {
+  min-height: 40px;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.btn-primary {
+  min-height: 40px;
+  border-radius: 12px;
+  font-size: 16px;
+  padding: 10px 16px;
+  cursor: pointer;
+}

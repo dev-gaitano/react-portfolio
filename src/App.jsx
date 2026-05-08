@@ -9,8 +9,11 @@ function App() {
   return (
     <div className="wrapper-app">
       <Navbar />
-      <Addproject />
-      <ProjectList />
+      <main>
+        <Addproject />
+        <hr />
+        <ProjectList />
+      </main>
     </div>
   )
 }

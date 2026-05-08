@@ -1,3 +1,11 @@
 .wrapper-add-project {
-  border: solid 1px blue;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

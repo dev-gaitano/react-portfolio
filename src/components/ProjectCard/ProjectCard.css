@@ -1,3 +1,15 @@
 .wrapper-project-card {
   border: solid 1px green;
+  display: flex;
+  gap: 20px;
+}
+
+.project-thumbnail {
+  width: 96px;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

@@ -1,6 +1,7 @@
 import "./ProjectList.css"
 
 import ProjectCard from "../ProjectCard/ProjectCard"
+import InputSecondary from "../ui/InputSecondary"
 
 function ProjectList() {
   const projects = [
@@ -26,7 +27,7 @@ function ProjectList() {
 
   return (
     <div className="wrapper-project-list">
-      <input type="search" name="search-projects" placeholder="Search projects" />
+      <InputSecondary type={"search"} name={"search-projects"} placeholder={"Search projects"} />
       {projects.map((project) => (
         <ProjectCard
           key={project.id}
