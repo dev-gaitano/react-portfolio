@@ -21,22 +21,47 @@ body {
 }
 
 main {
-  padding: 0 48px;
+  padding: 48px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 48px;
+}
+
+input,
+textarea {
+  background: none;
 }
 
 .input-primary {
-  min-height: 40px;
-  border-radius: 12px;
+  min-height: 48px;
+  border-radius: 99px;
   font-size: 16px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  padding: 0 24px;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-primary:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px hsla(216, 100%, 55%, 0.1);
+}
+
+.input-primary::placeholder {
+  color: var(--text-muted);
 }
 
 .input-secondary {
-  min-height: 40px;
-  border-radius: 12px;
+  min-height: 44px;
+  border-radius: 99px;
   font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 0 16px;
+  color: var(--text);
+  background: none;
 }
 
 .input-secondary::placeholder {
@@ -45,7 +70,8 @@ main {
 
 .btn-primary {
   min-height: 40px;
-  border-radius: 12px;
+  border-radius: 99px;
+  border: none;
   font-size: 16px;
   padding: 10px 16px;
   cursor: pointer;
