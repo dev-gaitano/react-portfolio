@@ -1,31 +1,79 @@
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  --bg: hsla(0, 0%, 12%, 1.0);
+  --text: hsla(300, 8%, 97%, 1.0);
+  --text-muted: hsla(0, 0%, 34%, 1.0);
+  --text-muted-more: hsla(0, 0%, 34%, 0.5);
+  --primary: hsla(216, 100%, 55%, 1.0);
+  --surface: hsla(0, 0%, 16%, 1.0);
+  --border: hsla(0, 0%, 20%, 1.0);
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
+body {
+  background-color: var(--bg);
   color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
 
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
+main {
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+input,
+textarea {
+  background: none;
+}
+
+.input-primary {
+  min-height: 48px;
+  border-radius: 99px;
+  font-size: 16px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  padding: 0 24px;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-primary:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px hsla(216, 100%, 55%, 0.1);
+}
+
+.input-primary::placeholder {
+  color: var(--text-muted);
+}
+
+.input-secondary {
+  min-height: 44px;
+  border-radius: 99px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 0 16px;
+  color: var(--text);
+  background: none;
+}
+
+.input-secondary::placeholder {
+  color: var(--text-muted);
+}
+
+.btn-primary {
+  min-height: 40px;
+  border-radius: 99px;
+  border: none;
+  font-size: 16px;
+  padding: 10px 16px;
+  cursor: pointer;
+  background-color: var(--primary);
 }
