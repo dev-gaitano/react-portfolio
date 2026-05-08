@@ -1,7 +1,23 @@
+:root {
+  --bg: hsla(0, 0%, 12%, 1.0);
+  --text: hsla(300, 8%, 97%, 1.0);
+  --text-muted: hsla(0, 0%, 34%, 1.0);
+  --text-muted-more: hsla(0, 0%, 34%, 0.5);
+  --primary: hsla(216, 100%, 55%, 1.0);
+  --surface: hsla(0, 0%, 16%, 1.0);
+  --border: hsla(0, 0%, 20%, 1.0);
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
 }
 
 main {
@@ -23,10 +39,15 @@ main {
   font-size: 16px;
 }
 
+.input-secondary::placeholder {
+  color: var(--text-muted);
+}
+
 .btn-primary {
   min-height: 40px;
   border-radius: 12px;
   font-size: 16px;
   padding: 10px 16px;
   cursor: pointer;
+  background-color: var(--primary);
 }
