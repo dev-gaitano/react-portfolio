@@ -3,7 +3,7 @@ import "./Navbar.css"
 function Navbar() {
   return (
     <div className="wrapper-navbar">
-      Navbar component
+      <h1>Personal project showcase app</h1>
     </div>
   )
 }
