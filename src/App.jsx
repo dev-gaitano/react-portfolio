@@ -11,7 +11,6 @@ function App() {
       <Navbar />
       <main>
         <Addproject />
-        <hr />
         <ProjectList />
       </main>
     </div>
