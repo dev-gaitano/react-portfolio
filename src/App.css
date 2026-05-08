@@ -1,0 +1,7 @@
+.wrapper-app {
+  border: solid 1px red;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
